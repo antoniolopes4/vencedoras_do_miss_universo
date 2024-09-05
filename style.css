@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap'); /* Importa a fonte 'Playfair Display' */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Importa a fonte 'Roboto' */
+
+/* Reset para remover margens e espaçamentos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex; /* Define layout flexível */
+    flex-direction: column; /* Organiza o conteúdo na vertical */
+    font-family: 'Roboto', sans-serif; /* Define a fonte principal do corpo */
+    background-color: #FDFEFE; /* Cor de fundo clara */
+    color: #2C3E50; /* Cor do texto */
+}
+
+header {
+    background-color: #2C3E50; /* Fundo do cabeçalho escuro */
+    color: #FDFEFE; /* Cor do texto clara para contraste */
+    font-family: 'Playfair Display', serif; /* Fonte mais elegante para o título */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    font-size: 2.5em; /* Tamanho da fonte do cabeçalho */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Sombra para o texto do cabeçalho */
+    border-bottom: 5px solid #A3876A; /* Linha decorativa na parte inferior */
+    display: felx; /* Usa flexbox para alinhar o ícone com o texto */
+}
+
+
+/* Estilo do ícone de coroa */
+#iconCrown {
+    color: transparent; /* Remove a cor de preenchimento do ícone */
+    -webkit-text-stroke: 2px #A3876A; /* Adiciona um contorno ao ícone */
+}
+
+main {
+    flex: 1; /* Faz o conteúdo principal ocupar o máximo de espaço possível */
+    padding: 20px; /* Adiciona espaçamento ao redor */
+}
+
+/* Estilo da barra de pesquisa */
+#searchField {
+    display: flex; /* Usa flexbox para alinhar os elementos */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 30px; /* Espaçamento superior */
+    gap: 10px; /* Espaçamento entre os elementos */
+}
+
+input[type="text"] {
+    width: 50vw; /* Largura do campo de texto como metade da largura da tela */
+    padding: 15px; /* Espaçamento interno */
+    font-size: 1.5em; /* Tamanho da fonte do campo de texto */
+    border: 2px solid #A3876A; /* Borda ao redor do campo de texto */
+    border-radius: 30px; /* Bordas arredondadas */
+    text-align: center; /* Alinha o texto no centro do campo */
+    background-color: #F7F9F9; /* Cor de fundo clara */
+    color: #2C3E50; /* Cor do texto do campo */
+}
+
+/* Estilo do botão */
+button {
+    padding: 15px 30px; /* Espaçamento interno */
+    font-size: 1.4em; /* Tamanho da fonte do botão */
+    font-weight: bold; /* Texto em negrito */
+    background-color: #A3876A; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 30px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    transition: background-color 0.3s ease; /* Animação suave ao mudar a cor de fundo */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+button:hover {
+    background-color: #8C7358; /* Muda a cor de fundo no hover */
+}
+
+/* Área de resultados de busca */
+#searchResults {
+    margin-top: 30px; /* Espaçamento superior */
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Organiza os resultados na vertical */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+/* Cada item de resultado */
+.itemResult {
+    display: flex; /* Flexbox para alinhar a imagem e o texto lado a lado */
+    align-items: center; /* Alinhamento vertical */
+    background-color: rgba(163, 135, 106, 0.1); /* Fundo com leve transparência */
+    border: 1px solid #A3876A; /* Borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    gap: 20px; /* Espaçamento entre a imagem e o texto */
+    box-shadow: 2px 0px 5px rgba(49, 49, 49, 0.233); /* Sombra ao redor do item */
+}
+
+/* Estilo da imagem dentro de cada resultado */
+.itemResult img {
+    width: 200px; /* Define largura fixa */
+    height: 200px; /* Define altura fixa */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Texto associado a cada item de resultado */
+.itemText {
+    font-size: 1.4em; /* Tamanho da fonte do texto */
+}
+
+/* Estilo do título dentro de cada resultado */
+.itemText h2 {
+    font-family: 'Playfair Display', serif; /* Fonte elegante para o título */
+    font-size: 2em; /* Tamanho da fonte do título */
+    margin-bottom: 1rem; /* Espaçamento inferior */
+}
+
+/* Estilo do link para mais informações */
+.itemText a {
+    color: #A3876A; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Efeito ao passar o mouse sobre o link */
+.itemText a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilo para o ano de cada resultado */
+#itemYear {
+    font-weight: bold; /* Ano em negrito */
+}
+
+/* Estilo para o país de cada resultado */
+#itemCountry {
+    margin-top: 0.3rem; /* Pequeno espaçamento superior */
+    margin-bottom: 0.5rem; /* Pequeno espaçamento inferior */
+}
+
+/* Estilo para a descrição de cada resultado */
+#itemDescription {
+    margin-bottom: 1rem; /* Espaçamento inferior */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #2C3E50; /* Cor de fundo do rodapé */
+    color: #FDFEFE; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    font-size: 1em; /* Tamanho da fonte */
+}
+
+/* Estilo do link dentro do rodapé */
+footer a {
+    color: #A3876A; /* Cor do link */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+/* Efeito ao passar o mouse sobre o link no rodapé */
+footer a:hover {
+    text-decoration: underline; /* Adiciona sublinhado */
+}
