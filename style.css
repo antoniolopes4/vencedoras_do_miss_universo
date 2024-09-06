@@ -12,19 +12,20 @@ body {
     display: flex; /* Define layout flexível */
     flex-direction: column; /* Organiza o conteúdo na vertical */
     font-family: 'Roboto', sans-serif; /* Define a fonte principal do corpo */
-    background-color: #FDFEFE; /* Cor de fundo clara */
-    color: #2C3E50; /* Cor do texto */
+    background-color: #FDFEFE !important; /* Cor de fundo clara */
+    color: #2C3E50 !important; /* Cor do texto */
 }
 
 header {
-    background-color: #2C3E50; /* Fundo do cabeçalho escuro */
-    color: #FDFEFE; /* Cor do texto clara para contraste */
+    background-color: #2C3E50 !important; /* Fundo do cabeçalho escuro */
+    color: #FDFEFE !important; /* Cor do texto clara para contraste */
     font-family: 'Playfair Display', serif; /* Fonte mais elegante para o título */
     text-align: center; /* Centraliza o texto */
     padding: 20px; /* Espaçamento interno */
     font-size: 2.5em; /* Tamanho da fonte do cabeçalho */
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Sombra para o texto do cabeçalho */
-    border-bottom: 5px solid #A3876A; /* Linha decorativa na parte inferior */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3) !important; /* Sombra para o texto do cabeçalho */
+    border-bottom: 5px solid #A3876A
+    !important; /* Linha decorativa na parte inferior */
     display: felx; /* Usa flexbox para alinhar o ícone com o texto */
 }
 
@@ -32,7 +33,7 @@ header {
 /* Estilo do ícone de coroa */
 #iconCrown {
     color: transparent; /* Remove a cor de preenchimento do ícone */
-    -webkit-text-stroke: 2px #A3876A; /* Adiciona um contorno ao ícone */
+    -webkit-text-stroke: 2px #A3876A !important; /* Adiciona um contorno ao ícone */
 }
 
 main {
@@ -53,11 +54,11 @@ input[type="text"] {
     width: 50vw; /* Largura do campo de texto como metade da largura da tela */
     padding: 15px; /* Espaçamento interno */
     font-size: 1.5em; /* Tamanho da fonte do campo de texto */
-    border: 2px solid #A3876A; /* Borda ao redor do campo de texto */
+    border: 2px solid #A3876A !important; /* Borda ao redor do campo de texto */
     border-radius: 30px; /* Bordas arredondadas */
     text-align: center; /* Alinha o texto no centro do campo */
-    background-color: #F7F9F9; /* Cor de fundo clara */
-    color: #2C3E50; /* Cor do texto do campo */
+    background-color: #F7F9F9 !important; /* Cor de fundo clara */
+    color: #2C3E50 !important; /* Cor do texto do campo */
 }
 
 /* Estilo do botão */
@@ -65,8 +66,8 @@ button {
     padding: 15px 30px; /* Espaçamento interno */
     font-size: 1.4em; /* Tamanho da fonte do botão */
     font-weight: bold; /* Texto em negrito */
-    background-color: #A3876A; /* Cor de fundo */
-    color: white; /* Cor do texto */
+    background-color: #A3876A !important; /* Cor de fundo */
+    color: white !important; /* Cor do texto */
     border: none; /* Remove a borda padrão */
     border-radius: 30px; /* Bordas arredondadas */
     cursor: pointer; /* Muda o cursor ao passar por cima */
@@ -75,7 +76,7 @@ button {
 
 /* Efeito ao passar o mouse sobre o botão */
 button:hover {
-    background-color: #8C7358; /* Muda a cor de fundo no hover */
+    background-color: #8C7358 !important; /* Muda a cor de fundo no hover */
 }
 
 /* Área de resultados de busca */
@@ -90,12 +91,12 @@ button:hover {
 .itemResult {
     display: flex; /* Flexbox para alinhar a imagem e o texto lado a lado */
     align-items: center; /* Alinhamento vertical */
-    background-color: rgba(163, 135, 106, 0.1); /* Fundo com leve transparência */
-    border: 1px solid #A3876A; /* Borda */
+    background-color: rgba(163, 135, 106, 0.1) !important; /* Fundo com leve transparência */
+    border: 1px solid #A3876A !important; /* Borda */
     border-radius: 10px; /* Bordas arredondadas */
     padding: 20px; /* Espaçamento interno */
     gap: 20px; /* Espaçamento entre a imagem e o texto */
-    box-shadow: 2px 0px 5px rgba(49, 49, 49, 0.233); /* Sombra ao redor do item */
+    box-shadow: 2px 0px 5px rgba(49, 49, 49, 0.233) !important; /* Sombra ao redor do item */
 }
 
 /* Estilo da imagem dentro de cada resultado */
@@ -120,7 +121,7 @@ button:hover {
 
 /* Estilo do link para mais informações */
 .itemText a {
-    color: #A3876A; /* Cor do link */
+    color: #A3876A !important; /* Cor do link */
     text-decoration: none; /* Remove o sublinhado */
 }
 
@@ -147,8 +148,8 @@ button:hover {
 
 /* Estilo do rodapé */
 footer {
-    background-color: #2C3E50; /* Cor de fundo do rodapé */
-    color: #FDFEFE; /* Cor do texto */
+    background-color: #2C3E50 !important; /* Cor de fundo do rodapé */
+    color: #FDFEFE !important; /* Cor do texto */
     text-align: center; /* Centraliza o texto */
     padding: 20px; /* Espaçamento interno */
     font-size: 1em; /* Tamanho da fonte */
@@ -156,7 +157,7 @@ footer {
 
 /* Estilo do link dentro do rodapé */
 footer a {
-    color: #A3876A; /* Cor do link */
+    color: #A3876A !important; /* Cor do link */
     text-decoration: none; /* Remove sublinhado */
 }
 
